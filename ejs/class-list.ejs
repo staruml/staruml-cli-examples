@@ -1,0 +1,13 @@
+<html>
+  <head>
+  </head>
+  <body>
+    <h1><%=root.name%></h1>
+    <% app.repository.select('@UMLClass').forEach(elem => { %>
+    <h2><%= elem.name %></h2>
+    <ul><% elem.attributes.forEach(attr => { %>
+      <li><%= attr.name %> : <%= attr.getTypeString() || '<untyped>' %></li><% }) %>
+    </ul>
+    <% }) %>
+  </body>
+</html>

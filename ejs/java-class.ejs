@@ -1,0 +1,6 @@
+<%
+const _supers = element.getGeneralElements();
+const _extends = _supers.length > 0 ? ' extends ' + _supers[0].name : '';
+%>public class <%=element.name%><%=_extends%> {<% element.attributes.forEach(attr => { %>
+  private <%=attr.getTypeString() || 'Object' %> <%=attr.name%>;<% }) %>
+}
