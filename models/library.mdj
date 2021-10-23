@@ -5470,7 +5470,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFOe/TOTIaqvdo="
 							},
-							"name": "publicationDate"
+							"name": "publicationDate",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
@@ -5478,7 +5479,8 @@
 							"_parent": {
 								"$ref": "AAAAAAFOe/TOTIaqvdo="
 							},
-							"name": "numberOfPages"
+							"name": "numberOfPages",
+							"type": ""
 						},
 						{
 							"_type": "UMLAttribute",
